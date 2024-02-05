@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fdmgroup.AppiumProject.FirstTest">
+      <class name="com.fdmgroup.testcases.RegisterTest">
         <methods>
           <include name="tearDown"/>
+          <include name="Logintest"/>
           <include name="ConfigureAppium"/>
-          <include name="registerUser"/>
         </methods>
-      </class> <!-- com.fdmgroup.AppiumProject.FirstTest -->
+      </class> <!-- com.fdmgroup.testcases.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

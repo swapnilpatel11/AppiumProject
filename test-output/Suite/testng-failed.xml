@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="All Test(failed)">
+    <groups>
+      <run>
+        <include name="All"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.fdmgroup.AppiumProject.FirstTest">
+      <class name="com.fdmgroup.testcases.RegisterTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="ConfigureAppium"/>
-          <include name="registerUser"/>
+          <include name="Logintest"/>
         </methods>
-      </class> <!-- com.fdmgroup.AppiumProject.FirstTest -->
+      </class> <!-- com.fdmgroup.testcases.RegisterTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- All Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
