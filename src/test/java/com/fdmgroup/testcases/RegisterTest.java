@@ -16,14 +16,15 @@ public class RegisterTest extends BaseTest {
 		LoginPage loginPage = new LoginPage(driver);
 		RegisterPersonalInfoPage personalInfoPage = new RegisterPersonalInfoPage(driver);
 		
+		
 		homePage.clickOnLoginButton();
 		loginPage.clickOnRegisterButton();
-		personalInfoPage.setEmail("abc123@abc.com");
-		personalInfoPage.setUsername("abc12345");
-		personalInfoPage.setPassword("Abc@12345");
-		personalInfoPage.setConfirmPassword("Abc@12345");
+		personalInfoPage.setEmail(prop.getProperty("email") );
+		personalInfoPage.setUsername(prop.getProperty("username"));
+		personalInfoPage.setPassword(prop.getProperty("password"));
+		personalInfoPage.setConfirmPassword(prop.getProperty("confirmPassword"));
 		personalInfoPage.selectSecurityQuestion();
-		personalInfoPage.setSecurityAnswer("abcd");
+		personalInfoPage.setSecurityAnswer(prop.getProperty("securityAnswer"));
 		personalInfoPage.clickOnNextButton();
 		
 	}

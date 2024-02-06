@@ -2,59 +2,96 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-05T15:07:19 EST" name="Suite" finished-at="2024-02-05T15:08:51 EST" duration-ms="92089">
+  <suite started-at="2024-02-06T15:40:33 EST" name="Default suite" finished-at="2024-02-06T15:41:16 EST" duration-ms="43386">
     <groups>
-      <group name="All">
-        <method signature="RegisterTest.RegisterUserTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3c19aaa5]" name="RegisterUserTest" class="com.fdmgroup.testcases.RegisterTest"/>
-        <method signature="RegisterTest.RegisterUserTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" name="RegisterUserTest" class="com.fdmgroup.testcases.RegisterTest"/>
-      </group> <!-- All -->
-      <group name="Smoke">
-        <method signature="RegisterTest.LoginSmokeTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" name="LoginSmokeTest" class="com.fdmgroup.testcases.RegisterTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-05T15:07:19 EST" name="All Test" finished-at="2024-02-05T15:07:53 EST" duration-ms="34462">
-      <class name="com.fdmgroup.testcases.RegisterTest">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3c19aaa5]" started-at="2024-02-05T15:07:19 EST" name="ConfigureAppium" finished-at="2024-02-05T15:07:32 EST" duration-ms="13636" status="PASS">
+    <test started-at="2024-02-06T15:40:33 EST" name="Default test" finished-at="2024-02-06T15:41:16 EST" duration-ms="43386">
+      <class name="com.fdmgroup.testcases.DummyTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:33 EST" name="ConfigureAppium" finished-at="2024-02-06T15:40:43 EST" duration-ms="9846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="RegisterUserTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3c19aaa5]" started-at="2024-02-05T15:07:32 EST" name="RegisterUserTest" finished-at="2024-02-05T15:07:52 EST" duration-ms="19988" status="PASS">
+        <test-method is-config="true" signature="initial()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:43 EST" name="initial" finished-at="2024-02-06T15:40:44 EST" duration-ms="1966" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3c19aaa5]" started-at="2024-02-05T15:07:52 EST" name="tearDown" finished-at="2024-02-05T15:07:53 EST" duration-ms="787" status="PASS">
+        </test-method> <!-- initial -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:44 EST" name="LoginTest" data-provider="getData" finished-at="2024-02-06T15:40:47 EST" duration-ms="2973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swapnil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fdm@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:47 EST" name="tearDown" finished-at="2024-02-06T15:40:48 EST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.fdmgroup.testcases.RegisterTest -->
-    </test> <!-- All Test -->
-    <test started-at="2024-02-05T15:07:53 EST" name="Smoke Test" finished-at="2024-02-05T15:08:51 EST" duration-ms="57551">
-      <class name="com.fdmgroup.testcases.RegisterTest">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:07:53 EST" name="ConfigureAppium" finished-at="2024-02-05T15:08:14 EST" duration-ms="20525" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:48 EST" name="ConfigureAppium" finished-at="2024-02-06T15:40:56 EST" duration-ms="7768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="LoginSmokeTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:08:14 EST" name="LoginSmokeTest" finished-at="2024-02-05T15:08:16 EST" duration-ms="2344" status="PASS">
+        <test-method is-config="true" signature="initial()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:56 EST" name="initial" finished-at="2024-02-06T15:40:58 EST" duration-ms="1560" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSmokeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:08:16 EST" name="tearDown" finished-at="2024-02-05T15:08:17 EST" duration-ms="1067" status="PASS">
+        </test-method> <!-- initial -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:40:58 EST" name="LoginTest" data-provider="getData" finished-at="2024-02-06T15:41:01 EST" duration-ms="3395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rinkal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fdm@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:41:01 EST" name="tearDown" finished-at="2024-02-06T15:41:01 EST" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:08:17 EST" name="ConfigureAppium" finished-at="2024-02-05T15:08:31 EST" duration-ms="13520" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:41:01 EST" name="ConfigureAppium" finished-at="2024-02-06T15:41:10 EST" duration-ms="8726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="RegisterUserTest()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:08:31 EST" name="RegisterUserTest" finished-at="2024-02-05T15:08:50 EST" duration-ms="19337" status="PASS">
+        <test-method is-config="true" signature="initial()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:41:10 EST" name="initial" finished-at="2024-02-06T15:41:12 EST" duration-ms="1783" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.RegisterTest@3fc2959f]" started-at="2024-02-05T15:08:50 EST" name="tearDown" finished-at="2024-02-05T15:08:51 EST" duration-ms="750" status="PASS">
+        </test-method> <!-- initial -->
+        <test-method signature="LoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:41:12 EST" name="LoginTest" data-provider="getData" finished-at="2024-02-06T15:41:15 EST" duration-ms="3314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahulan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123445]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fdmgroup.testcases.DummyTest@5bf0d49]" started-at="2024-02-06T15:41:15 EST" name="tearDown" finished-at="2024-02-06T15:41:16 EST" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.fdmgroup.testcases.RegisterTest -->
-    </test> <!-- Smoke Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.fdmgroup.testcases.DummyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

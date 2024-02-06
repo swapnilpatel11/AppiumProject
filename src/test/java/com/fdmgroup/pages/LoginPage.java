@@ -24,4 +24,6 @@ public class LoginPage extends AndroidActions{
 	public void clickOnRegisterButton() {
 		RegisterButton.click();
 	}
+	
+	
 }
