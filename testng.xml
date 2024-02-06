@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="All Test">
-		<groups>
+	<test thread-count="5" name="All">
+		<!--<groups>
 			<run>
 				<exclude name="Smoke"></exclude>
 				<exclude name="Regression"></exclude>
 			</run>
-		</groups>
+		</groups> -->
 		<classes>
 			<class name="com.fdmgroup.testcases.RegisterTest" />
 		</classes>
 	</test> <!--
 	Test -->
-	<test thread-count="5" name="Smoke Test">
-		<groups>
+	<test thread-count="5" name="Smoke">
+		<!--<groups>
 			<run>
+				<exclude name="Smoke"></exclude>
 				<exclude name="Regression"></exclude>
 			</run>
-		</groups>
+		</groups> -->
 		<classes>
-			<class name="com.fdmgroup.testcases.RegisterTest">
-			</class>
+			<class name="com.fdmgroup.testcases.SmokeTest" />
 		</classes>
 	</test> <!--
 	Test -->

@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="All Test(failed)">
-    <groups>
-      <run>
-        <include name="All"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="All(failed)">
     <classes>
       <class name="com.fdmgroup.testcases.RegisterTest">
         <methods>
-          <include name="Logintest"/>
+          <include name="tearDown"/>
+          <include name="LoginSmokeTest"/>
+          <include name="ConfigureAppium"/>
+          <include name="RegisterSmokeTest"/>
+          <include name="RegisterUserTest"/>
         </methods>
       </class> <!-- com.fdmgroup.testcases.RegisterTest -->
     </classes>
-  </test> <!-- All Test(failed) -->
+  </test> <!-- All(failed) -->
+  <test thread-count="5" name="Smoke(failed)">
+    <classes>
+      <class name="com.fdmgroup.testcases.SmokeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+          <include name="LoginSmokeTest"/>
+          <include name="RegisterSmokeTest"/>
+        </methods>
+      </class> <!-- com.fdmgroup.testcases.SmokeTest -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
 </suite> <!-- Failed suite [Suite] -->

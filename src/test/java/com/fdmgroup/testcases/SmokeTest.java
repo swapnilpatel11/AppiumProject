@@ -22,5 +22,7 @@ public class SmokeTest extends BaseTest{
 		loginPage.clickOnRegisterButton();		
 	}
 	
+	
+	
 
 }
