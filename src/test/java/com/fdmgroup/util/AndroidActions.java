@@ -11,7 +11,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class AndroidActions  {
+public class AndroidActions  extends AppiumUtils{
 	AndroidDriver driver;
 
 	public AndroidActions(AndroidDriver driver) {

@@ -1,10 +1,12 @@
 package com.fdmgroup.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.fdmgroup.util.AndroidActions;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -18,62 +20,43 @@ public class RegisterPersonalInfoPage extends AndroidActions {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text=\"Email Address\"]")
-	private WebElement EmailTextBox;
+	@AndroidFindBy(xpath ="//android.widget.EditText[@text=\"First Name\"]")
+	private WebElement FirstNameTextbox;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text=\"Username\"]")
-	private WebElement UsernameTextBox;
+	@AndroidFindBy(xpath ="//android.widget.EditText[@text=\"Last Name\"]")
+	private WebElement LastNameTextbox;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text=\"Password\"]")
-	private WebElement PasswordTextBox;
+	@AndroidFindBy(xpath="//android.widget.EditText[@text=\"Date of Birth\"]")
+	private WebElement DateOfBirth;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text=\"Confirm Password\"]")
-	private WebElement ConfirmPasswordTextBox;
+	@AndroidFindBy(xpath="//android.widget.EditText[@text=\"Mobile Number\"]")
+	private WebElement MobileNumberField;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Select an option.\"]")
-	private WebElement SecurityQuestionDropdown;
+	@AndroidFindBy(id = "android:id/button1")
+	private WebElement clickOkayDOB;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"What is your pet's name?\"]")
-	private WebElement PetNameOption;
-	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text=\"Security Answer\"]")
-	private WebElement SecurityAnswerTextBox;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Next\"]")
+	@AndroidFindBy(accessibility="Next")
 	private WebElement NextButton;
 	
-	
-	
-	public void setEmail(String email) {
-		EmailTextBox.sendKeys(email);
+	public void setFirstName(String firstName) {
+		FirstNameTextbox.sendKeys(firstName);
+	}
+	public void setLastName(String lastName) {
+		LastNameTextbox.sendKeys(lastName);
 	}
 	
-	public void setUsername(String username) {
-		UsernameTextBox.sendKeys(username);
+	public void setDOB() {
+		DateOfBirth.click();
+		clickOkayDOB.click();
 	}
 	
-	public void setPassword(String password) {
-		PasswordTextBox.sendKeys(password);
-	}
-	
-	public void setConfirmPassword(String password) {
-		ConfirmPasswordTextBox.sendKeys(password);
-	}
-	
-	public void selectSecurityQuestion() {
-		SecurityQuestionDropdown.click();
-		PetNameOption.click();
-	}
-	
-	public void setSecurityAnswer(String answer) {
-		SecurityAnswerTextBox.sendKeys(answer);
+	public void setMobileNumber(String number) {
+		MobileNumberField.sendKeys(number);
 	}
 	
 	public void clickOnNextButton() {
-		scrollToText("Next");
 		NextButton.click();
 	}
-	
 	
 	
 
