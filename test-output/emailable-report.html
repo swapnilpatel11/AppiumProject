@@ -8,13 +8,14 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">43,386</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">All</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,000</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.fdmgroup.testcases.DummyTest</td><td><a href="#m0">LoginTest</a></td><td rowspan="3">1707252044970</td><td rowspan="3">2973</td></tr><tr class="passedeven"><td><a href="#m1">LoginTest</a></td></tr><tr class="passedeven"><td><a href="#m2">LoginTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.fdmgroup.testcases.LoginTest</td><td><a href="#m0">LoginUser</a></td><td rowspan="1">1707845366984</td><td rowspan="1">12056</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.fdmgroup.testcases.DummyTest#LoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>swapnil</td><td>fdm@12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.fdmgroup.testcases.DummyTest#LoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Rinkal</td><td>fdm@12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.fdmgroup.testcases.DummyTest#LoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Rahulan</td><td>123445</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>All</h2><h3 id="m0">com.fdmgroup.testcases.LoginTest#LoginUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Welcome test!] but found [Welcome test]
+	at com.fdmgroup.testcases.LoginTest.LoginUser(LoginTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

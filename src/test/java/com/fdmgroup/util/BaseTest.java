@@ -29,8 +29,8 @@ public class BaseTest {
 	public Properties   prop;
 //	public HomePage homePage;
 
-	@BeforeMethod
-//	@BeforeClass
+//	@BeforeMethod
+	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException, IOException {
 //		Properties prop = new Properties();
 //		FileInputStream fis = new FileInputStream("C:\\Users\\Swapn\\eclipse-workspace\\AppiumProject\\src\\test\\java\\com\\fdmgroup\\util\\data.properties");
@@ -51,7 +51,7 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(deviceName);
-		options.setApp("C:\\Users\\Swapn\\eclipse-workspace\\AppiumProject\\src\\test\\java\\resources\\IDB 1.0.1.apk");
+		options.setApp("C:\\Users\\Swapn\\eclipse-workspace\\AppiumProject\\src\\test\\java\\resources\\IDB Preview.apk");
 
 		driver = new AndroidDriver(new URL("http://"+ipAddress+":"+port), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -68,8 +68,8 @@ public class BaseTest {
         }
     }
 
-	@AfterMethod
-//	@AfterClass
+//	@AfterMethod
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		service.stop(); // stop service

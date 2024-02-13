@@ -20,10 +20,30 @@ public class LoginPage extends AndroidActions{
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Register\"]")
 	private WebElement RegisterButton;
+	
+	@AndroidFindBy(xpath="//android.widget.EditText[@text=\"Username\"]")
+	private WebElement UsernameField;
+	
+	@AndroidFindBy(xpath="//android.widget.EditText[@text=\"Password\"]")
+	private WebElement PasswordField;
+	
+	@AndroidFindBy(accessibility="Login")
+	private WebElement LoginButton;
 
 	public void clickOnRegisterButton() {
 		RegisterButton.click();
 	}
 	
+	public void setUsername(String username) {
+		UsernameField.sendKeys(username);
+	}
+	
+	public void setPassword(String password) {
+		PasswordField.sendKeys(password);
+	}
+	
+	public void clickOnLoginButton() {
+		LoginButton.click();
+	}
 	
 }
