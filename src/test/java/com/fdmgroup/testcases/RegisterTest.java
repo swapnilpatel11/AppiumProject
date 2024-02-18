@@ -12,7 +12,7 @@ import com.fdmgroup.util.BaseTest;
 public class RegisterTest extends BaseTest {
 	
 	
-	@Test (groups = "All")
+	@Test (groups = {"UserData"})
 	public void RegisterUserTest() {
 		HomePage homePage = new HomePage(driver);
 		LoginPage loginPage = new LoginPage(driver);

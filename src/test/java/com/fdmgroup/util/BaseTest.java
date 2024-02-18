@@ -30,7 +30,7 @@ public class BaseTest {
 //	public HomePage homePage;
 
 //	@BeforeMethod
-	@BeforeClass
+	@BeforeClass (alwaysRun=true)
 	public void ConfigureAppium() throws MalformedURLException, IOException {
 //		Properties prop = new Properties();
 //		FileInputStream fis = new FileInputStream("C:\\Users\\Swapn\\eclipse-workspace\\AppiumProject\\src\\test\\java\\com\\fdmgroup\\util\\data.properties");
@@ -69,7 +69,7 @@ public class BaseTest {
     }
 
 //	@AfterMethod
-	@AfterClass
+	@AfterClass (alwaysRun=true)
 	public void tearDown() {
 		driver.quit();
 		service.stop(); // stop service
